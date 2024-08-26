@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F4F6F7;
+}
+
+.head {
+    background-color: #f32726;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---login-----*/
+.login {
+    width: 50%;
+    height: auto;
+    background-color: white;
+    margin: auto;
+    padding: 8px 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 8px;
+}
+
+.login h1,
+h2,
+h3 {
+    font-family: Oswald-SemiBold;
+}
+
+.login form label {
+    display: flex;
+    margin: 12px 0;
+}
+
+.login form label span {
+    width: 25%;
+    color: black;
+    padding-left: 12px;
+    font-weight: 600;
+}
+
+::placeholder {
+    font-size: small;
+    opacity: 0.4;
+    color: rgb(82, 80, 80);
+    /* padding-left: 8px; */
+}
+
+.login form label,
+input[type=text],
+[type=password],
+select {
+    width: 100%;
+    padding-left: 8px;
+    height: 48px;
+}
+/* .login form label input[type=text], [type=password]{
+    width: 90%;
+} */
+.login form label input[type=submit] {
+    margin:  auto;
+    background-color: #f02d2d;
+    border: none;
+    padding: 12px 48px;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+#right{
+    float: right !important;
+    /* text-decoration: none; */
+    color: #F32726;
+    font-weight: 550;
+}
+.login form label input[type=submit]:hover {
+    background-color: #f10909;
+}
+
+
+.show-hide{
+    position: relative;
+}
+#pass{
+    position: absolute;
+    padding-right: 38px;
+}
+#eye{
+    position: absolute;
+    right: 3%;
+    top: 16px;
+    z-index: 333;
+    cursor: pointer;
+}
+
+
+div.relative {
+    position: relative;
+}
+
+div.absolute {
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    font-weight: bold;
+    /* font-size: 20px; */
+}
+
+#captcha {
+    margin-top: 1rem;
+}
+
+/*----Main-----*/
+.registreion {
+    background-color: white;
+    width: 70%;
+    height: auto;
+    padding: 5px 0 5px 8px;
+}
+
+.registreion label {
+    line-height: auto;
+}
+
+input[type=checkbox] {
+    margin-left: 24px;
+    font-size: small;
+}
+
+.logout {
+    padding: 18px;
+    background-color: white;
+    max-height: 108px;
+}
+
+#dt {
+    text-align: center;
+}
+
+.sign-out {
+    color: white;
+    font-weight: 600;
+    background-color: #f02d2d;
+    border-radius: 4px;
+    outline: none;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    padding: 5px 8px;
+}
+
+.sign-out:focus,
+.sign-out:hover,
+.sign-out:active {
+    color: white;
+    background-color: #f10909;
+    text-decoration: none;
+}
+
+.sign-out>span {
+    margin: 0.1em;
+}
+
+.input_field {
+    height: 30px;
+}
+
+.input_field label {
+    background-image: url(img/captchabackground.jfif);
+    width: 100%;
+}
+
+#captcha1 {
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+#refresh img {
+    margin: 20px 0 0 5px;
+    line-height: 30px;
+}
+
+/*--footer----*/
+footer {
+    background-color: #f32726;
+    position: absolute;
+    bottom: 0 !important;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 5px 0;
+}
+
+
+@media (max-width: 768px) {
+    .login {
+        width: 95%;
+        padding: 8px 12px !important;
+    }
+
+    .login form label {
+        display: block;
+        margin: 18px 0;
+    }
+
+    .login form label span {
+        width: 20%;
+    }
+
+    .login form label,
+    input[type=text],
+    [type=password] {
+        width: 97%;
+        margin-left: 5px;
+    }
+    #capt{
+        margin-top: 42px;
+    }
+}
